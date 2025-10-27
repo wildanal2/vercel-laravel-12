@@ -23,42 +23,16 @@
         }
     ],
     "routes": [
-        {
-            "src": "/assets/(.*)",
-            "dest": "/public/build/assets/$1"
-        },
-        {
-            "src": "/favicon.ico",
-            "dest": "/public/favicon.ico"
-        },
-        {
-            "src": "/favicon-16x16.png",
-            "dest": "/public/favicon-16x16.png"
-        },
-        {
-            "src": "/favicon-32x32.png",
-            "dest": "/public/favicon-32x32.png"
-        },
-        {
-            "src": "/favicon-48x48.png",
-            "dest": "/public/favicon-48x48.png"
-        },
-        {
-            "src": "/manifest.json",
-            "dest": "/public/manifest.json"
-        },
-        {
-            "src": "/og-image.jpg",
-            "dest": "/public/og-image.jpg"
-        },
-        {
-            "src": "/robots.txt",
-            "dest": "/public/robots.txt"
-        },
-        {
-            "src": "/.htaccess",
-            "dest": "/public/.htaccess"
-        },
+        { "src": "/build/assets/(.*)", "dest": "/assets/$1" },
+        { "src": "/assets/(.*)", "dest": "/public/assets/$1" },
+        { "src": "/favicon.ico", "dest": "/public/favicon.ico" },
+        { "src": "/favicon-16x16.png", "dest": "/public/favicon-16x16.png" },
+        { "src": "/favicon-32x32.png", "dest": "/public/favicon-32x32.png" },
+        { "src": "/favicon-48x48.png", "dest": "/public/favicon-48x48.png" },
+        { "src": "/manifest.json", "dest": "/public/manifest.json" },
+        { "src": "/og-image.jpg", "dest": "/public/og-image.jpg" },
+        { "src": "/robots.txt", "dest": "/public/robots.txt" },
+        { "src": "/.htaccess", "dest": "/public/.htaccess" },
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
