@@ -16,10 +16,6 @@
             "use": "vercel-php@0.7.4"
         },
         {
-            "src": "/public/build/assets/**",
-            "use": "@vercel/static"
-        },
-        {
             "src": "/public/**",
             "use": "@vercel/static"
         }

@@ -11,19 +11,14 @@ export default defineConfig({
         tailwindcss(),
     ],
     build: {
+        outDir: 'public/build',
+        manifest: true,
         rollupOptions: {
-            output: {
-                assetFileNames: (assetInfo) => {
-                    if (assetInfo.name.endsWith('.css')) {
-                        return 'assets/[name].[hash][extname]';
-                    }
-                    return 'assets/[name].[hash][extname]';
-                },
-            },
+          input: [
+            'resources/css/app.css',
+            'resources/js/app.js'
+          ]
         },
-    },
-    // Ensure assets are served with the correct protocol
-    server: {
-        https: false,
+        emptyOutDir: true, // pastikan clean sebelum rebuild
     },
 });
