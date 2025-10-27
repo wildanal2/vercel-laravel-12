@@ -17,8 +17,7 @@
         },
         {
             "src": "/public/(.*)",
-            "use": "@vercel/static",
-            "config": { "dest": "/$1" }
+            "use": "@vercel/static"
         }
     ],
     "routes": [
