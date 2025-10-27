@@ -8,9 +8,9 @@
     "builds": [
         {
             "src": "package.json",
-            "use": "@vercel/node",
-            "config": { "includeFiles": ["public/build/**"] }
-        },
+            "use": "@vercel/static-build",
+            "config": { "distDir": "public/build" }
+          },
         {
             "src": "/api/index.php",
             "use": "vercel-php@0.7.4"
