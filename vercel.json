@@ -16,8 +16,9 @@
             "use": "vercel-php@0.7.4"
         },
         {
-            "src": "/public/**",
-            "use": "@vercel/static"
+            "src": "/public/(.*)",
+            "use": "@vercel/static",
+            "config": { "dest": "/$1" }
         }
     ],
     "routes": [
